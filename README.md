@@ -1,6 +1,6 @@
 # CUD Agent Hackathon 2026
 
-Website for the CUD Agent Hackathon, hosted by the Software Engineering Club at Canadian University Dubai in partnership with etisalat by e&. Fri 20 to Sat 21 November 2026.
+Website for the CUD Agent Hackathon, hosted by the Software Engineering Club at Canadian University Dubai, supported by etisalat by e&. Fri 20 to Sat 21 November 2026.
 
 It's a static site: one `index.html` plus `assets/`. There's no build step.
 

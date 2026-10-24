@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CUD Agent Hackathon 2026</title>
-<meta name="description" content="CUD Agent Hackathon. 20–21 November 2026 at Canadian University Dubai. Hosted by the Software Engineering Club with etisalat by e&. Three tracks, teams of four, AED 9,000 in prizes.">
+<meta name="description" content="CUD Agent Hackathon. 20–21 November 2026 at Canadian University Dubai. Hosted by the Software Engineering Club, supported by etisalat by e&. Three tracks, teams of four, AED 9,000 in prizes.">
 <meta name="theme-color" content="#d7282f">
 <meta property="og:title" content="CUD Agent Hackathon 2026">
 <meta property="og:description" content="20–21 Nov 2026 · Canadian University Dubai · Teams of four · AED 9,000 in prizes.">
@@ -275,6 +275,15 @@ table.r td:first-child{font-weight:700;width:24%}
 .club{display:flex;align-items:center;gap:12px;font-family:var(--display);font-stretch:105%;font-weight:800;text-transform:uppercase;line-height:1;font-size:1.05rem}
 .club i{font-style:normal;font-family:var(--mono);font-weight:600;font-size:1.1rem;width:52px;height:52px;display:grid;place-items:center;background:var(--red);color:#fff;border:2px solid var(--ink)}
 @media (max-width:860px){.partners{grid-template-columns:1fr}.partners>div{border-right:0;border-bottom:2px solid var(--ink)}}
+.committee{margin-top:28px;border:2px solid var(--ink);background:var(--white)}
+.committee>h3{font-family:var(--mono);font-size:.78rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;padding:14px 30px;border-bottom:2px solid var(--ink);background:var(--ink);color:#fff}
+.committee .roles{display:grid;grid-template-columns:repeat(2,1fr)}
+.committee .roles>div{padding:26px 30px;border-right:2px solid var(--ink)}
+.committee .roles>div:last-child{border:0}
+.committee .label{color:var(--red);display:block;margin-bottom:10px}
+.committee ul{list-style:none;display:flex;flex-direction:column;gap:6px}
+.committee li{font-family:var(--display);font-weight:700;font-size:1.1rem}
+@media (max-width:860px){.committee .roles{grid-template-columns:1fr}.committee .roles>div{border-right:0;border-bottom:2px solid var(--ink)}.committee>h3,.committee .roles>div{padding-left:20px;padding-right:20px}}
 
 /* faq */
 .faq{border-top:2px solid var(--ink)}
@@ -340,7 +349,7 @@ footer{background:var(--ink);color:#bbb;padding:48px 0 32px;font-size:.9rem}
 <div class="hero grid-bg">
   <div class="wrap">
     <div class="hero-title">
-      <span class="kicker label">Software Engineering Club &nbsp;×&nbsp; <img src="assets/etisalat-logo-red.svg" alt="etisalat by e&amp;" width="67" height="14"></span>
+      <span class="kicker label">Software Engineering Club &nbsp;·&nbsp; Supported by <img src="assets/etisalat-logo-red.svg" alt="etisalat by e&amp;" width="67" height="14"></span>
       <h1><span class="small">CUD · First edition</span>Agent<span class="r">Hackathon</span></h1>
     </div>
     <div>
@@ -644,9 +653,22 @@ footer{background:var(--ink);color:#bbb;padding:48px 0 32px;font-size:.9rem}
       </div>
       <div>
         <div class="lg"><img src="assets/etisalat-logo-red.svg" alt="etisalat by e&amp;" loading="lazy" style="max-height:34px"></div>
-        <span class="label">Partner</span>
+        <span class="label">Supported by</span>
         <h4>etisalat by e&amp;</h4>
         <p>Supporting the hackathon and the students taking part.</p>
+      </div>
+    </div>
+    <div class="committee">
+      <h3>Organising committee · Software Engineering Club</h3>
+      <div class="roles">
+        <div>
+          <span class="label">Program Chairs</span>
+          <ul><li>Sahil Garg</li><li>Dr. Yasir</li></ul>
+        </div>
+        <div>
+          <span class="label">Student Coordinators</span>
+          <ul><li>Aditya Matai</li><li>Rikhil Nair</li></ul>
+        </div>
       </div>
     </div>
   </div>
@@ -699,7 +721,7 @@ footer{background:var(--ink);color:#bbb;padding:48px 0 32px;font-size:.9rem}
     </div>
     <div class="legal">
       <span>CUD Agent Hackathon 2026 · Software Engineering Club, Canadian University Dubai</span>
-      <span>In partnership with etisalat by e&amp;</span>
+      <span>Supported by etisalat by e&amp;</span>
     </div>
   </div>
 </footer>
