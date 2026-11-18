@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CUD Agent Hackathon 2026</title>
-<meta name="description" content="CUD Agent Hackathon. 20–21 November 2026 at Canadian University Dubai. Hosted by the Software Engineering Club, supported by etisalat by e&. Three tracks, teams of four, AED 9,000 in prizes.">
+<title>CUDHacks 2026 · AI for the UAE</title>
+<meta name="description" content="CUDHacks 2026: AI for the UAE, Solving National Challenges. 20–21 November 2026 at Canadian University Dubai. Three tracks (Digital UAE, Sustainable UAE, Empowering UAE Communities), teams of four, AED 9,000 in prizes.">
 <meta name="theme-color" content="#d7282f">
-<meta property="og:title" content="CUD Agent Hackathon 2026">
-<meta property="og:description" content="20–21 Nov 2026 · Canadian University Dubai · Teams of four · AED 9,000 in prizes.">
+<meta property="og:title" content="CUDHacks 2026 · AI for the UAE">
+<meta property="og:description" content="Solving national challenges. 20–21 Nov 2026 · Canadian University Dubai · Teams of four · AED 9,000 in prizes.">
 <meta property="og:image" content="assets/campus.jpg">
 <meta property="og:type" content="website">
 <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
@@ -159,9 +159,28 @@ section{padding:96px 0;border-bottom:2px solid var(--ink)}
 .who .cs{color:var(--ink)}
 .who .cy{color:var(--red)}
 .ref{font-family:var(--mono);font-size:.74rem;color:var(--grey);margin-top:12px}
+.ch{list-style:none;margin-top:6px}
+.ch li{padding:9px 0;border-top:1px solid var(--rule)}
+.ch li:first-child{border-top:0;padding-top:4px}
+.ch b{display:block;font-size:.98rem}
+.ch span{display:block;font-size:.88rem;color:var(--ink-2);line-height:1.45}
+.own{border:1.5px solid var(--ink);background:var(--paper-2);padding:12px 16px;margin-bottom:14px;font-size:.9rem}
+.own b{font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--red);display:block}
 .note-box{margin-top:28px;border:2px solid var(--ink);background:var(--white);padding:16px 20px;display:flex;gap:16px;align-items:center}
 .note-box .label{background:var(--ink);color:#fff;padding:4px 8px;white-space:nowrap}
 @media (max-width:560px){.note-box{flex-direction:column;align-items:flex-start}}
+
+/* data */
+.data{display:grid;grid-template-columns:repeat(4,1fr);border:2px solid var(--ink);background:var(--white)}
+.data a{display:flex;flex-direction:column;gap:8px;padding:26px 24px;border-right:1px solid var(--rule);text-decoration:none;transition:background .12s}
+.data a:last-child{border-right:0}
+.data a:hover{background:#fdeeee}
+.data .label{color:var(--red)}
+.data h4{font-family:var(--display);font-stretch:108%;font-weight:800;font-size:1.25rem;text-transform:uppercase;line-height:1}
+.data p{font-size:.9rem;color:var(--ink-2)}
+.data .go{font-family:var(--mono);font-size:.74rem;margin-top:auto;padding-top:6px}
+@media (max-width:900px){.data{grid-template-columns:1fr 1fr}.data a:nth-child(2){border-right:0}.data a:nth-child(-n+2){border-bottom:1px solid var(--rule)}}
+@media (max-width:500px){.data{grid-template-columns:1fr}.data a{border-right:0;border-bottom:1px solid var(--rule)}.data a:last-child{border-bottom:0}}
 
 /* prizes */
 .prizes{background:var(--red);color:#fff}
@@ -218,10 +237,6 @@ section{padding:96px 0;border-bottom:2px solid var(--ink)}
 .rule-box .label{color:#ff8a8f;display:block;margin-bottom:4px}
 .rubric{margin-top:56px}
 .rubric h3{font-size:1.8rem;margin-bottom:16px}
-.tabs{display:flex;border:2px solid var(--ink);border-bottom:0;width:max-content;max-width:100%;overflow-x:auto;background:var(--white)}
-.tabs button{padding:12px 18px;font-family:var(--mono);font-size:.8rem;text-transform:uppercase;border-right:2px solid var(--ink);white-space:nowrap}
-.tabs button:last-child{border-right:0}
-.tabs button[aria-selected=true]{background:var(--ink);color:#fff}
 .tbl{border:2px solid var(--ink);background:var(--white);overflow:hidden}
 table.r{width:100%;border-collapse:collapse;font-size:.92rem}
 table.r th,table.r td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--rule);border-right:1px solid var(--rule)}
@@ -243,13 +258,17 @@ table.r td:first-child{font-weight:700;width:24%}
 .showdown{background:var(--ink);color:#fff}
 .showdown .sec-head .no{background:transparent;border-color:#fff}
 .showdown .sec-head p{color:#cfcfcf}
-.vs{display:grid;grid-template-columns:1fr auto 1fr;border:2px solid #fff}
-.vs>div{padding:28px}
-.vs .mid{display:grid;place-items:center;background:var(--red);font-family:var(--display);font-stretch:125%;font-weight:900;font-size:2.4rem;border-inline:2px solid #fff;padding:20px 30px}
-.vs h4{font-family:var(--display);font-stretch:112%;font-weight:800;font-size:1.5rem;text-transform:uppercase;margin:6px 0}
-.vs p{color:#cfcfcf;font-size:.95rem}
-.vs .label{color:#ff8a8f}
-@media (max-width:760px){.vs{grid-template-columns:1fr}.vs .mid{border-inline:0;border-block:2px solid #fff}}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);border:2px solid #fff}
+.steps>div{padding:26px 24px;border-right:2px solid #fff}
+.steps>div:last-child{border-right:0}
+.steps .label{color:#ff8a8f}
+.steps h4{font-family:var(--display);font-stretch:112%;font-weight:800;font-size:1.35rem;text-transform:uppercase;margin:8px 0 6px;line-height:1}
+.steps p{color:#cfcfcf;font-size:.93rem}
+.steps .hl{background:var(--red)}
+.steps .hl p{color:#fff}
+.steps .hl .label{color:#fff}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}.steps>div:nth-child(2){border-right:0}.steps>div:nth-child(-n+2){border-bottom:2px solid #fff}}
+@media (max-width:540px){.steps{grid-template-columns:1fr}.steps>div{border-right:0;border-bottom:2px solid #fff}.steps>div:last-child{border-bottom:0}}
 .opt{display:inline-block;font-family:var(--mono);font-size:.72rem;border:1.5px solid #fff;padding:3px 8px;margin-top:22px;text-transform:uppercase}
 
 /* deliverables */
@@ -334,9 +353,11 @@ footer{background:var(--ink);color:#bbb;padding:48px 0 32px;font-size:.9rem}
     <nav class="links" id="links" aria-label="Main">
       <a href="#about">About</a>
       <a href="#tracks">Tracks</a>
+      <a href="#data">Data</a>
       <a href="#prizes">Prizes</a>
       <a href="#schedule">Schedule</a>
       <a href="#judging">Judging</a>
+      <a href="#after">After</a>
       <a href="#faq">FAQ</a>
     </nav>
     <a class="btn btn-red js-reg" href="#register">Register</a>
@@ -350,10 +371,10 @@ footer{background:var(--ink);color:#bbb;padding:48px 0 32px;font-size:.9rem}
   <div class="wrap">
     <div class="hero-title">
       <span class="kicker label">Software Engineering Club &nbsp;·&nbsp; Supported by <img src="assets/etisalat-logo-red.svg" alt="etisalat by e&amp;" width="67" height="14"></span>
-      <h1><span class="small">CUD · First edition</span>Agent<span class="r">Hackathon</span></h1>
+      <h1><span class="small">CUDHacks 2026 · First edition</span>AI for<span class="r">the UAE</span></h1>
     </div>
     <div>
-      <p class="intro"><b>Two days, about twenty teams, one theme: agents.</b> Write a bot that tests websites, build a site that bots can't cheat, or make an assistant that gets real chores done without falling for traps.</p>
+      <p class="intro"><b>Solving national challenges.</b> Two days, about twenty teams, real UAE problems. Pick a challenge in Digital UAE, Sustainable UAE or Empowering UAE Communities, or bring your own. Build a working prototype that clearly helps a UAE user or organisation.</p>
       <table class="spec">
         <tr><th>When</th><td>Fri 20 – Sat 21 November 2026</td></tr>
         <tr><th>Where</th><td>Canadian University Dubai <span>· City Walk</span></td></tr>
@@ -390,11 +411,11 @@ footer{background:var(--ink);color:#bbb;padding:48px 0 32px;font-size:.9rem}
     <div class="sec-head">
       <span class="no">01</span>
       <h2>What's this?</h2>
-      <p>A lot of web traffic today isn't people. It's scripts and bots clicking, buying and filling in forms. This hackathon is about that: software that acts on other software. It's the first one we've run, and it's built for CS and Cybersecurity students working together.</p>
+      <p>CUDHacks is a student hackathon about using AI on problems the UAE actually has: government services, cities and sustainability, and the people who live here. We care less about how many ideas get pitched and more about whether a real organisation would want to test what you built. It's our first edition, and teams mix CS and Cybersecurity students.</p>
     </div>
     <div class="about">
-      <div class="cs"><span class="tag">Computer Science</span><h3>You lead the build</h3><p>Crawlers, automation, back ends, front ends. You turn the brief into something that actually runs when the judge pokes at it.</p></div>
-      <div class="cy"><span class="tag">Cybersecurity</span><h3>You own half the score</h3><p>Threat models, security checks, spotting traps, keeping user data safe. Every track has outcomes that only hold up if this part is done properly.</p></div>
+      <div class="cs"><span class="tag">Computer Science</span><h3>You lead the build</h3><p>Data pipelines, models, back ends, front ends. You turn a challenge statement into a prototype that actually runs when the judge tries it.</p></div>
+      <div class="cy"><span class="tag">Cybersecurity</span><h3>You make it trustworthy</h3><p>Threat models, privacy, safe data handling, abuse cases. A tool for residents or government only gets piloted if people can trust it, and that part is yours.</p></div>
     </div>
     <div class="facts">
       <div><b>~20</b><span>teams</span></div>
@@ -411,93 +432,106 @@ footer{background:var(--ink);color:#bbb;padding:48px 0 32px;font-size:.9rem}
     <div class="sec-head">
       <span class="no">02</span>
       <h2>Three tracks</h2>
-      <p>Each track has one brief and five required outcomes. Judges grade them live during your demo, so it has to work.</p>
+      <p>Each track has suggested challenge statements. Pick one, or propose your own problem as long as it's relevant to the UAE. Judges score what you demo live, so it has to work.</p>
     </div>
     <div class="tracks">
       <article class="track">
-        <div class="track-top"><span>Track 1</span><span>Build the agent</span></div>
+        <div class="track-top"><span>Track 1</span><span>Digital UAE</span></div>
         <div class="track-body">
           <div class="big">01</div>
-          <h3>Testing Agent</h3>
-          <div class="sub">Brief: Website QA bot</div>
-          <p>Software ships faster than anyone can test it. Give your agent a URL. It explores the site by itself and comes back with real problems, plus enough evidence for a developer to fix them.</p>
+          <h3>Digital UAE</h3>
+          <div class="sub">Government services · Accessibility · Digital trust</div>
+          <p>Make UAE government services simpler, cut down on admin work, and protect residents, businesses and public services from digital threats.</p>
           <div class="brief">
-            <span class="label">It should check</span>
-            <ul class="list">
-              <li>Links, forms, checkout flow</li>
-              <li>Accessibility and performance</li>
-              <li>Security basics: headers, cookies, exposed files</li>
+            <span class="label">Challenge statements</span>
+            <ul class="ch">
+              <li><b>Government Service Navigator</b><span>An assistant that helps residents find the right service, check whether they're eligible, and see which documents they need.</span></li>
+              <li><b>Document Pre-Check</b><span>Spots missing attachments in a permit or certificate application before it's submitted.</span></li>
+              <li><b>Government Website Auditor</b><span>Finds broken links, accessibility problems and outdated information on public-service sites.</span></li>
+              <li><b>UAE Scam Detector</b><span>Flags suspicious job offers, phishing links and impersonation attempts.</span></li>
+              <li><b>SME Cybersecurity Assistant</b><span>Helps small UAE businesses catch invoice fraud and basic security risks.</span></li>
+              <li><b>Secure AI Agent Monitor</b><span>Enforces the actions an AI agent is allowed to take and flags risky behaviour in a simulated government workflow.</span></li>
             </ul>
           </div>
-          <div class="brief">
-            <span class="label">Report</span>
-            <p>Overall grade and a score per area. For every finding: a screenshot, steps to reproduce and a suggested fix.</p>
-          </div>
+          <div class="own"><b>Or propose your own</b>Any government-service, accessibility or cybersecurity problem in the UAE.</div>
           <div class="who">
-            <div class="cs"><span class="label">CS</span><span>Crawler, browser automation, report UI</span></div>
-            <div class="cy"><span class="label">Cyber</span><span>Security checks, severity ratings, fix guidance</span></div>
+            <div class="cs"><span class="label">CS</span><span>Assistants, crawlers, document parsing, front end</span></div>
+            <div class="cy"><span class="label">Cyber</span><span>Fraud and phishing signals, agent permissions, privacy</span></div>
           </div>
-          <div class="ref">Think: Checkly, Mabl</div>
+          <div class="ref">Inspired by published UAE Hackathon 2026 challenges</div>
         </div>
       </article>
 
       <article class="track">
-        <div class="track-top"><span>Track 2</span><span>Survive the agents</span></div>
+        <div class="track-top"><span>Track 2</span><span>Sustainable UAE</span></div>
         <div class="track-body">
           <div class="big">02</div>
-          <h3>Agent-Proof Platform</h3>
-          <div class="sub">Brief: Event ticketing</div>
-          <p>Build ticketing for campus events: sign up, browse, buy (max 4 per person per event), get a QR ticket that only works once, and give organisers a sales and check-in view. Then make sure bots can't break it.</p>
+          <h3>Sustainable UAE</h3>
+          <div class="sub">Smart cities · Transport · Energy · Water</div>
+          <p>Tackle infrastructure, mobility, energy and environmental problems where the impact can be measured.</p>
           <div class="brief">
-            <span class="label">Must hold up against</span>
-            <ul class="list bad">
-              <li>Forged or reused tickets</li>
-              <li>Buying over the limit, overselling</li>
-              <li>Viewing other people's orders</li>
-              <li>Price tampering, password guessing</li>
+            <span class="label">Challenge statements</span>
+            <ul class="ch">
+              <li><b>Water Waste Detector</b><span>Spots unusual water use and likely leaks.</span></li>
+              <li><b>Heat-Smart Mobility Planner</b><span>Recommends walking and transit routes that take heat exposure and shade into account.</span></li>
+              <li><b>Smart Waste Collection</b><span>Predicts how much collection each area needs and plans better routes in a simulation.</span></li>
             </ul>
           </div>
+          <div class="own"><b>Or propose your own</b>Any smart-city, transport, energy, water or sustainability problem in the UAE.</div>
           <div class="who">
-            <div class="cs"><span class="label">CS</span><span>Back end, database, purchase flow, QR tickets, front end</span></div>
-            <div class="cy"><span class="label">Cyber</span><span>Threat model, ticket signing, access control, rate limiting</span></div>
+            <div class="cs"><span class="label">CS</span><span>Data analysis, forecasting, routing, maps and dashboards</span></div>
+            <div class="cy"><span class="label">Cyber</span><span>Data integrity, tampered or spoofed sensor readings, privacy of usage data</span></div>
           </div>
-          <div class="ref">Think: Platinumlist, DICE</div>
+          <div class="ref">Data: RTA, Dubai Municipality, Data.Dubai, Bayanat</div>
         </div>
       </article>
 
       <article class="track">
-        <div class="track-top"><span>Track 3</span><span>Put the agent to work</span></div>
+        <div class="track-top"><span>Track 3</span><span>Empowering UAE Communities</span></div>
         <div class="track-body">
           <div class="big">03</div>
-          <h3>Personal Task Agent</h3>
-          <div class="sub">Pick brief A or B</div>
-          <p>An assistant that a sketchy page can fool is a liability. Build one that does a real chore across websites and can't be tricked along the way.</p>
+          <h3>UAE Communities</h3>
+          <div class="sub">Healthcare · Education · Worker welfare · Inclusion</div>
+          <p>Make everyday life easier and safer for the UAE's diverse population, and help students, young professionals and entrepreneurs get ahead.</p>
           <div class="brief">
-            <span class="label">A · Subscription canceller</span>
-            <ul class="list bad">
-              <li>Hidden cancel buttons</li>
-              <li>"Pause instead?" detours</li>
-              <li>Forms asking for your card again</li>
-              <li>Fake confirmation pages</li>
+            <span class="label">Challenge statements</span>
+            <ul class="ch">
+              <li><b>Multilingual Worker Safety</b><span>Spoken safety instructions with comprehension checks for construction workers.</span></li>
+              <li><b>Accessible UAE Services</b><span>Voice-driven navigation for seniors and people of determination.</span></li>
+              <li><b>Emergency Communication Assistant</b><span>Clear, multilingual emergency guidance based on verified instructions.</span></li>
+              <li><b>UAE Career Navigator</b><span>Matches students to the skills, internships and career paths that fit them.</span></li>
+              <li><b>SME Setup Assistant</b><span>Walks entrepreneurs through the publicly documented steps for setting up a business.</span></li>
+              <li><b>UAE Cultural Explorer</b><span>Helps tourists find lesser-known places and Emirati heritage.</span></li>
             </ul>
           </div>
-          <div class="brief">
-            <span class="label">B · Job application agent</span>
-            <ul class="list bad">
-              <li>Scam listings</li>
-              <li>Forms asking for bank or passport details</li>
-              <li>Lookalike login pages</li>
-            </ul>
-          </div>
+          <div class="own"><b>Or propose your own</b>Any healthcare, education, worker-welfare, entrepreneurship or inclusion problem in the UAE.</div>
           <div class="who">
-            <div class="cs"><span class="label">CS</span><span>Automation, task planning, error recovery, activity log</span></div>
-            <div class="cy"><span class="label">Cyber</span><span>Safe data handling, page verification, trap detection</span></div>
+            <div class="cs"><span class="label">CS</span><span>Voice and language interfaces, recommendation, mobile-friendly UI</span></div>
+            <div class="cy"><span class="label">Cyber</span><span>Verified sources, safe handling of personal data, misuse prevention</span></div>
           </div>
-          <div class="ref">Think: Rocket Money, Simplify</div>
+          <div class="ref">Built for the people who live and work here</div>
         </div>
       </article>
     </div>
-    <div class="note-box"><span class="label">Heads up</span><span>You don't need paid AI credits. A browser automation bot (Playwright, Puppeteer, Selenium) counts as an agent, and free open-source tools are enough to score full marks.</span></div>
+    <div class="note-box"><span class="label">Note</span><span>These are suggested concepts. We're not saying the UAE has no existing solutions to these problems. Show what your approach does better. You don't need paid AI credits either: free and open-source tools are enough for full marks.</span></div>
+  </div>
+</section>
+
+<!-- DATA -->
+<section id="data">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="no">03</span>
+      <h2>Real data</h2>
+      <p>Build on real public data. These portals have UAE datasets you can explore now, before the event.</p>
+    </div>
+    <div class="data">
+      <a href="https://bayanat.ae/" target="_blank" rel="noopener"><span class="label">Federal</span><h4>Bayanat</h4><p>The UAE Open Data Portal. Federal datasets across many sectors.</p><span class="go">bayanat.ae ↗</span></a>
+      <a href="https://data.dubai/" target="_blank" rel="noopener"><span class="label">Dubai</span><h4>Data.Dubai</h4><p>Dubai statistics, public datasets and analytics resources.</p><span class="go">data.dubai ↗</span></a>
+      <a href="https://www.dm.gov.ae/open-data2/" target="_blank" rel="noopener"><span class="label">Municipal</span><h4>Dubai Municipality</h4><p>Building, geospatial, heritage and municipal datasets.</p><span class="go">dm.gov.ae ↗</span></a>
+      <a href="https://www.rta.ae/wps/portal/rta/ae/home/open-data" target="_blank" rel="noopener"><span class="label">Mobility</span><h4>RTA Open Data</h4><p>Transport and mobility statistics and data.</p><span class="go">rta.ae ↗</span></a>
+    </div>
+    <div class="note-box"><span class="label">Check access</span><span>Some datasets and APIs need an access request or permission first, so check before you plan around one. Simulated or sample data is fine if you say so clearly in your demo.</span></div>
   </div>
 </section>
 
@@ -505,16 +539,16 @@ footer{background:var(--ink);color:#bbb;padding:48px 0 32px;font-size:.9rem}
 <section id="prizes" class="prizes">
   <div class="wrap">
     <div class="sec-head">
-      <span class="no">03</span>
+      <span class="no">04</span>
       <h2>Prizes</h2>
-      <p>AED 9,000 in cash for the top three teams.</p>
+      <p>AED 9,000 in cash for the top three teams, plus a place at the 30-day follow-up demo for the strongest projects.</p>
     </div>
     <div class="podium">
       <div class="first"><div class="place"><span>1st place</span><span>★</span></div><div class="amt">5,000</div><div class="cur">AED</div></div>
       <div><div class="place"><span>2nd place</span></div><div class="amt">3,000</div><div class="cur">AED</div></div>
       <div><div class="place"><span>3rd place</span></div><div class="amt">1,000</div><div class="cur">AED</div></div>
     </div>
-    <div class="prize-foot"><span>Total pool: AED 9,000</span><span>Ranked on the judging rubric below</span></div>
+    <div class="prize-foot"><span>Total pool: AED 9,000</span><span>Ranked on the judging rubric below, across all tracks</span></div>
   </div>
 </section>
 
@@ -522,9 +556,9 @@ footer{background:var(--ink);color:#bbb;padding:48px 0 32px;font-size:.9rem}
 <section id="schedule">
   <div class="wrap">
     <div class="sec-head">
-      <span class="no">04</span>
+      <span class="no">05</span>
       <h2>Schedule</h2>
-      <p>Friday is for building. Saturday is for finishing, demos and awards.</p>
+      <p>Friday is for building. Saturday is for finishing, demos, the finals showcase and awards.</p>
     </div>
     <div class="days">
       <div class="day">
@@ -532,10 +566,10 @@ footer{background:var(--ink);color:#bbb;padding:48px 0 32px;font-size:.9rem}
         <ol>
           <li><time>08:30</time><div><b>Check-in &amp; breakfast</b><small>Badges, team tables, Wi-Fi</small></div></li>
           <li class="key"><time>09:30</time><div><b>Opening</b><small>CUD, Software Engineering Club, etisalat by e&amp;</small></div></li>
-          <li><time>10:00</time><div><b>Briefs &amp; rubrics released</b></div></li>
+          <li><time>10:00</time><div><b>Challenge briefings</b><small>Tracks, datasets, teams confirm their challenge</small></div></li>
           <li class="key"><time>10:30</time><div><b>Hacking starts</b></div></li>
           <li><time>13:00</time><div><b>Lunch</b></div></li>
-          <li><time>15:00</time><div><b>Mentor round 1</b><small>CS and Cyber mentors visit every team</small></div></li>
+          <li><time>15:00</time><div><b>Mentor round 1</b><small>Technical mentors and domain experts visit every team</small></div></li>
           <li><time>19:00</time><div><b>Checkpoint &amp; dinner</b></div></li>
         </ol>
       </div>
@@ -543,11 +577,11 @@ footer{background:var(--ink);color:#bbb;padding:48px 0 32px;font-size:.9rem}
         <div class="day-h"><h3>Day 2</h3><span class="label">Sat 21 Nov</span></div>
         <ol>
           <li><time>09:00</time><div><b>Breakfast, keep building</b></div></li>
-          <li><time>11:00</time><div><b>Mentor round 2</b><small>Demo dry runs, security review</small></div></li>
-          <li class="key"><time>13:00</time><div><b>Code freeze</b><small>Repo, README and design note in</small></div></li>
+          <li><time>11:00</time><div><b>Mentor round 2</b><small>Demo dry runs, impact and security review</small></div></li>
+          <li class="key"><time>13:00</time><div><b>Code freeze</b><small>Repo, README and impact note in</small></div></li>
           <li><time>13:30</time><div><b>Lunch</b></div></li>
           <li class="key"><time>14:00</time><div><b>Live judging</b><small>5 min demo + 2 min questions per team</small></div></li>
-          <li><time>17:00</time><div><b>Live Showdown</b><small>Optional, if time allows</small></div></li>
+          <li><time>17:00</time><div><b>Finals showcase</b><small>Top teams present to invited industry and government guests</small></div></li>
           <li class="key"><time>18:00</time><div><b>Awards &amp; closing</b></div></li>
         </ol>
       </div>
@@ -560,16 +594,16 @@ footer{background:var(--ink);color:#bbb;padding:48px 0 32px;font-size:.9rem}
 <section id="judging" class="grid-bg">
   <div class="wrap">
     <div class="sec-head">
-      <span class="no">05</span>
+      <span class="no">06</span>
       <h2>How it's judged</h2>
-      <p>Half your score comes from the five required outcomes for your track, each marked 0 to 3 while you demo. The other half covers how well it's built and pitched.</p>
+      <p>The same five criteria apply to every track, each marked 0 to 3 while you demo. The biggest weight goes to the measurable benefit to a UAE user or organisation, and to whether your prototype really works.</p>
     </div>
     <div class="weight-bar" aria-label="Score weights">
-      <div class="main" style="flex:50"><b>50%</b><span>Required outcomes</span></div>
-      <div style="flex:20"><b>20%</b><span>Tech &amp; code</span></div>
-      <div style="flex:10"><b>10%</b><span>Business value</span></div>
-      <div style="flex:10"><b>10%</b><span>Presentation</span></div>
-      <div style="flex:10"><b>10%</b><span>Originality</span></div>
+      <div class="main" style="flex:30"><b>30%</b><span>UAE impact</span></div>
+      <div style="flex:25"><b>25%</b><span>Working prototype</span></div>
+      <div style="flex:20"><b>20%</b><span>Tech &amp; security</span></div>
+      <div style="flex:15"><b>15%</b><span>Feasibility</span></div>
+      <div style="flex:10"><b>10%</b><span>Pitch</span></div>
     </div>
     <div class="judge-notes">
       <div class="scale">
@@ -578,40 +612,42 @@ footer{background:var(--ink);color:#bbb;padding:48px 0 32px;font-size:.9rem}
         <div><b>2</b><span>Meets</span></div>
         <div><b>3</b><span>Exceeds</span></div>
       </div>
-      <div class="rule-box"><span class="label">Demo rule</span>The judge picks the input. They choose the website for Track 1, the misuse attempt for Track 2, and the task for Track 3. No pre-recorded demos.</div>
+      <div class="rule-box"><span class="label">Demo rule</span>Show it working, live. Judges may ask you to try an input they choose. Pre-recorded demos and slides-only pitches don't score.</div>
     </div>
 
     <div class="rubric">
-      <h3>Rubric by track</h3>
-      <div class="tabs" role="tablist">
-        <button role="tab" aria-selected="true" data-t="0">Track 1</button>
-        <button role="tab" aria-selected="false" data-t="1">Track 2</button>
-        <button role="tab" aria-selected="false" data-t="2">Track 3</button>
-      </div>
+      <h3>Rubric</h3>
       <div class="tbl">
         <table class="r">
-          <thead><tr><th>Outcome</th><th>1 · Partial</th><th>2 · Meets</th><th>3 · Exceeds</th></tr></thead>
-          <tbody id="rubric"></tbody>
+          <thead><tr><th>Criterion</th><th>1 · Partial</th><th>2 · Meets</th><th>3 · Exceeds</th></tr></thead>
+          <tbody>
+            <tr><td>UAE impact</td><td data-l="1">Generic problem, no clear UAE user</td><td data-l="2">Clear UAE user and problem, with the benefit explained</td><td data-l="3">Benefit is measurable (time saved, water saved, risk reduced) and compared with what exists today</td></tr>
+            <tr><td>Working prototype</td><td data-l="1">Mock-ups or a partial flow</td><td data-l="2">Core flow works end to end in the live demo</td><td data-l="3">Handles the judge's own input and edge cases without breaking</td></tr>
+            <tr><td>Tech &amp; security</td><td data-l="1">Fragile, and data handling hasn't been thought about</td><td data-l="2">Sound design, personal data handled safely</td><td data-l="3">Threat model covers misuse; makes good use of real or realistic data</td></tr>
+            <tr><td>Feasibility</td><td data-l="1">No path beyond the demo</td><td data-l="2">Realistic about data access, cost and who would run it</td><td data-l="3">A concrete pilot plan a partner could say yes to</td></tr>
+            <tr><td>Pitch</td><td data-l="1">Hard to follow</td><td data-l="2">Problem, demo and result come across clearly in 5 minutes</td><td data-l="3">Convincing, and honest about limits and next steps</td></tr>
+          </tbody>
         </table>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SHOWDOWN -->
-<section class="showdown">
+<!-- AFTER -->
+<section id="after" class="showdown">
   <div class="wrap">
     <div class="sec-head">
-      <span class="no">06</span>
-      <h2>Live Showdown</h2>
-      <p>If there's time on Saturday, the best testing agents from Track 1 go up against the best ticketing platforms from Track 2, live in front of everyone.</p>
+      <span class="no">07</span>
+      <h2>After the weekend</h2>
+      <p>The best projects shouldn't stop at the awards. What matters is a working student-built solution and an organisation that wants to test it.</p>
     </div>
-    <div class="vs">
-      <div><span class="label">Track 1</span><h4>Testing agents</h4><p>Crawl it, probe it, report everything that breaks.</p></div>
-      <div class="mid">VS</div>
-      <div><span class="label">Track 2</span><h4>Ticketing platforms</h4><p>No oversold events, no reused tickets, no peeking at other orders.</p></div>
+    <div class="steps">
+      <div><span class="label">Sat 21 Nov</span><h4>Finals showcase</h4><p>Top teams present to the industry and government representatives we've invited to judge or attend.</p></div>
+      <div><span class="label">+30 days</span><h4>Follow-up demo</h4><p>The top 2–3 teams come back with improvements and a realistic pilot plan for interested organisations.</p></div>
+      <div class="hl"><span class="label">Pilot</span><h4>A real trial</h4><p>Where a partner sees a genuine use case, we'll work to set up a small, supervised trial.</p></div>
+      <div><span class="label">On the record</span><h4>Track outcomes</h4><p>We'll record whether partners tested, adopted or funded a project, not just how many ideas were pitched.</p></div>
     </div>
-    <span class="opt">Optional · showcase prizes only · track rankings are locked before it starts</span>
+    <span class="opt">Follow-up demos and pilots depend on partner interest · nothing beyond the prizes is guaranteed</span>
   </div>
 </section>
 
@@ -619,13 +655,13 @@ footer{background:var(--ink);color:#bbb;padding:48px 0 32px;font-size:.9rem}
 <section id="submit">
   <div class="wrap">
     <div class="sec-head">
-      <span class="no">07</span>
+      <span class="no">08</span>
       <h2>What to hand in</h2>
     </div>
     <div class="checks">
-      <div><span class="box">✓</span><h4>A working build</h4><p>Starts with <code>one command</code>.</p></div>
+      <div><span class="box">✓</span><h4>A working prototype</h4><p>Starts with <code>one command</code>.</p></div>
       <div><span class="box">✓</span><h4>Public repo</h4><p>With a README that explains how to run it.</p></div>
-      <div><span class="box">✓</span><h4>One-page design note</h4><p>Architecture, threat model, the decisions you made.</p></div>
+      <div><span class="box">✓</span><h4>One-page impact note</h4><p>Your UAE user, the problem, what you improve on, data used, threat model and a pilot plan.</p></div>
       <div><span class="box">✓</span><h4>Demo + Q&amp;A</h4><p>5 minutes live, then 2 minutes of questions.</p></div>
     </div>
   </div>
@@ -635,7 +671,7 @@ footer{background:var(--ink);color:#bbb;padding:48px 0 32px;font-size:.9rem}
 <section id="partners" class="grid-bg">
   <div class="wrap">
     <div class="sec-head">
-      <span class="no">08</span>
+      <span class="no">09</span>
       <h2>Who's running it</h2>
     </div>
     <div class="partners">
@@ -649,7 +685,7 @@ footer{background:var(--ink);color:#bbb;padding:48px 0 32px;font-size:.9rem}
         <div class="lg"><div class="club"><i>&lt;/&gt;</i><span>Software<br>Engineering Club</span></div></div>
         <span class="label">Organiser</span>
         <h4>CUD Software Engineering Club</h4>
-        <p>The student club behind the event. Briefs, mentors, judging and the weekend itself.</p>
+        <p>The student club behind the event: challenges, mentors, judging and the weekend itself.</p>
       </div>
       <div>
         <div class="lg"><img src="assets/etisalat-logo-red.svg" alt="etisalat by e&amp;" loading="lazy" style="max-height:34px"></div>
@@ -671,6 +707,7 @@ footer{background:var(--ink);color:#bbb;padding:48px 0 32px;font-size:.9rem}
         </div>
       </div>
     </div>
+    <div class="note-box"><span class="label">Challenge partners</span><span>Are you a government entity or company with a real problem you'd like students to solve? You can submit a challenge, share a dataset, mentor a track, or judge the finals. Get in touch with the organisers.</span></div>
   </div>
 </section>
 
@@ -678,17 +715,19 @@ footer{background:var(--ink);color:#bbb;padding:48px 0 32px;font-size:.9rem}
 <section id="faq">
   <div class="wrap">
     <div class="sec-head">
-      <span class="no">09</span>
+      <span class="no">10</span>
       <h2>FAQ</h2>
     </div>
     <div class="faq">
-      <details><summary><span class="mono">Q.01</span>Who can join?</summary><div class="a">CS and Cybersecurity students. Every team of four has people from both. CS leads the build and Cyber is responsible for half of what gets scored.</div></details>
+      <details><summary><span class="mono">Q.01</span>Who can join?</summary><div class="a">CS and Cybersecurity students. Every team of four has people from both. CS leads the build and Cyber makes sure it's safe and trustworthy enough to pilot.</div></details>
       <details><summary><span class="mono">Q.02</span>I don't have a full team. Can I still register?</summary><div class="a">Yes. Sign up on your own or as a pair and we'll match you with people from the other discipline before the event.</div></details>
-      <details><summary><span class="mono">Q.03</span>Do I need paid AI tools or API keys?</summary><div class="a">No. A browser automation bot counts as an agent. Free, open-source tools are enough to get full marks.</div></details>
-      <details><summary><span class="mono">Q.04</span>Do we pick our track?</summary><div class="a">We'll confirm before kickoff whether teams choose their track or get one assigned so the tracks stay balanced. You'll hear from us in advance.</div></details>
-      <details><summary><span class="mono">Q.05</span>Can we start coding early?</summary><div class="a">Briefs and rubrics are released at kickoff and project code has to be written during the event. Learning your tools beforehand is encouraged.</div></details>
-      <details><summary><span class="mono">Q.06</span>How are winners picked?</summary><div class="a">Five required outcomes per track, each scored 0–3 live (50%), plus tech &amp; code (20%), business value (10%), presentation (10%) and originality (10%). The full rubric is above.</div></details>
-      <details><summary><span class="mono">Q.07</span>What should I bring?</summary><div class="a">Laptop, charger, student ID. We'll handle food and Wi-Fi.</div></details>
+      <details><summary><span class="mono">Q.03</span>Do we pick our challenge?</summary><div class="a">Yes. Choose any challenge statement from the three tracks, or propose your own problem as long as it's relevant to the UAE. You'll confirm your choice at the challenge briefing on Friday morning.</div></details>
+      <details><summary><span class="mono">Q.04</span>Do we have to use real government data?</summary><div class="a">No, but it helps your impact score. The open data portals above are a good place to start. Some datasets need an access request, so if you can't get the real thing, simulated or sample data is fine as long as you say so in your demo.</div></details>
+      <details><summary><span class="mono">Q.05</span>Do I need paid AI tools or API keys?</summary><div class="a">No. Free and open-source models and tools are enough to get full marks.</div></details>
+      <details><summary><span class="mono">Q.06</span>Can we start coding early?</summary><div class="a">The challenge statements are public now, so research the problem and explore the data as much as you like. Project code has to be written during the event.</div></details>
+      <details><summary><span class="mono">Q.07</span>How are winners picked?</summary><div class="a">Five criteria, each scored 0–3 live: UAE impact (30%), working prototype (25%), tech &amp; security (20%), feasibility (15%) and pitch (10%). The full rubric is above.</div></details>
+      <details><summary><span class="mono">Q.08</span>What happens after the hackathon?</summary><div class="a">Top teams present at the finals showcase. About 30 days later, the strongest 2–3 teams get a follow-up demo with interested organisations, and where a partner sees a real use case we'll try to arrange a small, supervised pilot.</div></details>
+      <details><summary><span class="mono">Q.09</span>What should I bring?</summary><div class="a">Laptop, charger, student ID. We'll handle food and Wi-Fi.</div></details>
     </div>
   </div>
 </section>
@@ -698,7 +737,7 @@ footer{background:var(--ink);color:#bbb;padding:48px 0 32px;font-size:.9rem}
   <div class="wrap">
     <span class="label">20–21 Nov 2026 · CUD City Walk</span>
     <h2>Get your<br>team in.</h2>
-    <p>Places are limited to around 20 teams. Find three teammates, mix CS and Cyber, and register.</p>
+    <p>Places are limited to around 20 teams. Find three teammates, mix CS and Cyber, pick a UAE challenge, and register.</p>
     <div class="ctas">
       <a class="btn btn-red js-reg" href="#register">Register your team →</a>
       <a class="btn btn-line" id="mail" href="mailto:">Email the organisers</a>
@@ -716,11 +755,11 @@ footer{background:var(--ink);color:#bbb;padding:48px 0 32px;font-size:.9rem}
         <img class="e" src="assets/etisalat-logo-white.svg" alt="etisalat by e&amp;" width="86" height="18">
       </div>
       <nav aria-label="Footer">
-        <a href="#tracks">Tracks</a><a href="#prizes">Prizes</a><a href="#schedule">Schedule</a><a href="#judging">Judging</a><a href="#faq">FAQ</a><a href="https://www.cud.ac.ae" target="_blank" rel="noopener">cud.ac.ae ↗</a>
+        <a href="#tracks">Tracks</a><a href="#data">Data</a><a href="#prizes">Prizes</a><a href="#schedule">Schedule</a><a href="#judging">Judging</a><a href="#after">After</a><a href="#faq">FAQ</a><a href="https://www.cud.ac.ae" target="_blank" rel="noopener">cud.ac.ae ↗</a>
       </nav>
     </div>
     <div class="legal">
-      <span>CUD Agent Hackathon 2026 · Software Engineering Club, Canadian University Dubai</span>
+      <span>CUDHacks 2026 · AI for the UAE · Software Engineering Club, Canadian University Dubai</span>
       <span>Supported by etisalat by e&amp;</span>
     </div>
   </div>
@@ -737,7 +776,7 @@ const CONFIG = {
 
 if (CONFIG.registerUrl) document.querySelectorAll('.js-reg').forEach(a => { a.href = CONFIG.registerUrl; a.target = "_blank"; a.rel = "noopener"; });
 const mail = document.getElementById('mail');
-if (CONFIG.contactEmail) mail.href = "mailto:" + CONFIG.contactEmail + "?subject=CUD%20Agent%20Hackathon"; else mail.remove();
+if (CONFIG.contactEmail) mail.href = "mailto:" + CONFIG.contactEmail + "?subject=CUDHacks%202026"; else mail.remove();
 
 const hdr = document.getElementById('hdr'), menu = document.getElementById('menu');
 menu.addEventListener('click', () => { const o = hdr.classList.toggle('open'); menu.setAttribute('aria-expanded', o); menu.textContent = o ? 'Close' : 'Menu'; });
@@ -757,38 +796,6 @@ function tick() {
   return true;
 }
 if (tick()) { const t = setInterval(() => { if (!tick()) clearInterval(t); }, 1000); }
-
-const RUBRICS = [
-  [
-    ['Crawls a site on its own','Visits only the given page, or needs manual steps','Follows links and covers most of the site from one URL','Also handles logins, forms, and multi-step flows'],
-    ['Finds functional problems','Finds one type, such as broken links','Finds broken links and failing forms','Also finds a broken sign-up or checkout flow'],
-    ['Finds accessibility & performance problems','Covers one of the two areas','Covers both, with at least two checks each','Ranks the findings by impact'],
-    ['Finds security problems','Lists issues without severity','Finds header, cookie, or exposed-file issues and rates severity','Few false positives; explains each risk in plain language'],
-    ['Produces a report','Raw list of findings','Overall grade, score per area, evidence per finding','Screenshot, steps to reproduce, and fix per finding'],
-  ],
-  [
-    ['Purchase flow works','Some steps work','Register, buy, and receive a QR ticket all work','Clear error messages for invalid input'],
-    ['Tickets admit once','Ticket scans but can be reused','Second scan of the same ticket is rejected','Edited or forged tickets are also rejected'],
-    ['Purchase limit holds','Enforced in the interface only','Enforced on the server','Holds under rapid repeated requests, with no overselling'],
-    ['Orders stay private',"Other users' orders hidden in the interface only","Server blocks access to other users' orders",'Also blocks changes, cancellations, and price tampering'],
-    ['Organiser view','Shows events only','Shows sales and check-ins','Updates live, and only organisers can open it'],
-  ],
-  [
-    ['Completes the chore','Completes it with human help','Completes it end to end unaided','Completes several tasks in one run'],
-    ['Recovers from failure','Stops at the first error','Retries or reports clearly when a step fails','Adapts when the page layout changes'],
-    ['Keeps data safe','Credentials are hard-coded or appear in logs','Credentials stored safely; only data the task needs is shared','Asks the user before sharing sensitive data'],
-    ['Refuses traps','Detects one kind of trap','Detects and refuses two kinds','Detects three or more and explains why'],
-    ['Logs its activity','Basic output','Clear step-by-step log','Log includes evidence and flags anything suspicious'],
-  ],
-];
-const tb = document.getElementById('rubric'), tabs = document.querySelectorAll('.tabs button');
-const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-function show(t) {
-  tb.innerHTML = RUBRICS[t].map(r => `<tr><td>${esc(r[0])}</td><td data-l="1">${esc(r[1])}</td><td data-l="2">${esc(r[2])}</td><td data-l="3">${esc(r[3])}</td></tr>`).join('');
-  tabs.forEach((b, i) => b.setAttribute('aria-selected', i === t));
-}
-tabs.forEach(b => b.addEventListener('click', () => show(+b.dataset.t)));
-show(0);
 </script>
 </body>
 </html>
