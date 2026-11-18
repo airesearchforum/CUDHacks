@@ -1,6 +1,6 @@
 # CUDHacks 2026: AI for the UAE
 
-Website for CUDHacks 2026 ("AI for the UAE: Solving National Challenges"), hosted by the Software Engineering Club at Canadian University Dubai, supported by etisalat by e&. Fri 20 to Sat 21 November 2026.
+Website for CUDHacks 2026 ("AI for the UAE: Solving National Challenges"), hosted by the Software Engineering Club at Canadian University Dubai. Fri 20 to Sat 21 November 2026.
 
 There are three tracks: Digital UAE, Sustainable UAE and Empowering UAE Communities. Each has suggested challenge statements, and teams can also propose their own UAE problem. The page also covers open data sources, impact-based judging and the 30-day follow-up demo and pilot path.
 
